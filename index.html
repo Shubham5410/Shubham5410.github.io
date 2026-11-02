@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shubham Kumar — student portfolio, skills and projects.">
+  <title>Shubham Kumar | Portfolio</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#141c31; --text:#eef3ff; --muted:#aab6d3; --accent:#76a9ff; --line:#293653; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:radial-gradient(circle at 85% 0%,#1a2a4c 0,transparent 34%),var(--bg); color:var(--text); line-height:1.65; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .wrap { width:min(1000px,92%); margin:auto; }
+    header { padding:24px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:.4px; color:var(--text); }
+    nav .links { display:flex; gap:20px; flex-wrap:wrap; font-size:.95rem; }
+    .hero { padding:88px 0 66px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:.78rem; }
+    h1 { font-size:clamp(2.5rem,7vw,5rem); line-height:1.05; margin:14px 0; letter-spacing:-2px; }
+    .lead { max-width:680px; color:var(--muted); font-size:1.15rem; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:28px; }
+    .btn { display:inline-block; padding:11px 18px; border-radius:10px; border:1px solid var(--line); color:var(--text); font-weight:700; }
+    .btn.primary { background:var(--accent); color:#081225; border-color:var(--accent); }
+    section { padding:34px 0; }
+    h2 { font-size:1.8rem; margin:0 0 18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+    .card { background:rgba(20,28,49,.88); border:1px solid var(--line); border-radius:16px; padding:22px; }
+    .card h3 { margin:0 0 8px; }
+    .card p, .muted { color:var(--muted); margin:0; }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+    .tag { font-size:.85rem; border:1px solid var(--line); color:#d6e2ff; border-radius:99px; padding:4px 10px; }
+    .timeline { border-left:2px solid var(--line); padding-left:18px; }
+    .timeline .item { margin:0 0 20px; }
+    footer { border-top:1px solid var(--line); margin-top:40px; padding:26px 0 40px; color:var(--muted); }
+    @media(max-width:600px) { .hero{padding:62px 0 42px} nav .links{gap:12px} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#home">SHUBHAM KUMAR</a>
+        <div class="links">
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div class="eyebrow">Student • Aspiring Developer</div>
+      <h1>Hi, I'm Shubham.</h1>
+      <p class="lead">I’m a student interested in technology, programming and practical projects. I enjoy learning by building and exploring how software can solve real-world problems.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my projects</a>
+        <a class="btn" href="#about">About me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p class="muted">I’m pursuing B.Tech in Industrial Chemistry at Guru Gobind Singh Indraprastha University (GGSIPU). I’m a fresher, building my foundation in programming and computer-based projects. I’m curious, motivated to learn, and interested in combining technical knowledge with hands-on work.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="grid">
+        <div class="card"><h3>Programming</h3><p class="muted">C, C++, Java, Python</p></div>
+        <div class="card"><h3>Web</h3><p class="muted">HTML</p></div>
+        <div class="card"><h3>Computer Vision</h3><p class="muted">OpenCV, MediaPipe</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Project</h2>
+      <div class="card">
+        <h3>Real-Time Hand Recognition & Finger Detection System</h3>
+        <p class="muted">A webcam-based computer vision project that detects hands, tracks 21 hand landmarks, identifies left and right hands, and counts raised fingers in real time.</p>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">Computer Vision</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card timeline">
+        <div class="item">
+          <h3>B.Tech — Industrial Chemistry</h3>
+          <p class="muted">Guru Gobind Singh Indraprastha University (GGSIPU)</p>
+        </div>
+        <div class="item">
+          <h3>Senior Secondary (Class XII)</h3>
+          <p class="muted">NIOS · 2025</p>
+        </div>
+        <div class="item">
+          <h3>Additional Course</h3>
+          <p class="muted">DASD · Lal Bahadur Shastri Institute</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="muted">Want to connect or discuss a project? Add your preferred contact details here before publishing.</p>
+        <p style="margin-top:12px"><strong>Email:</strong> <span class="muted">Add your email address</span></p>
+        <p><strong>GitHub:</strong> <span class="muted">Add your GitHub profile link</span></p>
+        <p><strong>LinkedIn:</strong> <span class="muted">Add your LinkedIn profile link</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© 2026 Shubham Kumar · Personal Portfolio</div></footer>
+</body>
+</html>
